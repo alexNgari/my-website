@@ -1,0 +1,11 @@
+.container {
+  display: inline-grid;
+}
+
+#prof_pic {
+  background-color: red;
+}
+
+#summary {
+  background-color: blue;
+}
