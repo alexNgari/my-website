@@ -1,11 +1,19 @@
 .container {
-  display: inline-grid;
+  width: 70%;
+  padding-top: 5em;
 }
 
 #prof_pic {
-  background-color: red;
+  margin-bottom: 5rem;
+  font-size: 1.5em;
+
 }
 
-#summary {
-  background-color: blue;
+#pic {
+  /* border-style: solid; */
+  /* border-color: red; */
+  /* padding: 4em; */
+  max-width: 100%;
+  float: left;
+  margin: 1em;
 }
