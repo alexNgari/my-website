@@ -16,8 +16,8 @@
 
       <nav>
         <ul>
-          <li><a href=#>Home</a></li>
-          <li><a href=#>Skills</a></li>
+          <li><a routerLink="/" routerLinkActive="active">Home</a></li>
+          <li><a routerLink="/skills" routerLinkActive="active">Skills</a></li>
           <li><a href=#>Gallery</a></li>
           <li><a href=#>Blog</a></li>
         </ul>
@@ -25,7 +25,9 @@
     </div>
   </header>
 
-  <app-summary></app-summary>
+  <!-- <app-summary></app-summary>
+  <app-skills></app-skills> -->
+  <router-outlet></router-outlet>
 
   <footer>
     <p>&copy; Alex Ngari | alex.ngari03@gmail.com</p>
