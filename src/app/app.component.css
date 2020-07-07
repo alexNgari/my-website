@@ -211,4 +211,8 @@ body.dark_mode .hamburger, body.dark_mode .hamburger::before, body.dark_mode .ha
   border-color: white;
 }
 
+body.dark_mode #menu.mobile {
+  background: rgba(0, 0, 0, 0.95);
+}
+
 /* filter: brightness(0) saturate(100%) invert(34%) sepia(73%) saturate(800%) hue-rotate(138deg) brightness(94%) contrast(101%); */
