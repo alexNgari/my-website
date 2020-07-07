@@ -7,9 +7,15 @@
 }
 
 #prof_pic {
-  flex: 0 0 20em;
+  flex: 0 0 25em;
   margin-bottom: 5rem;
   margin: 1rem;
+}
+
+#prof_pic img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #summary {
