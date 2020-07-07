@@ -28,7 +28,7 @@ header nav {
 
 header li {
   display: inline;
-  padding-left: 1.5rem;
+  padding: 0.75rem;
 }
 
 header a:hover {
