@@ -24,7 +24,7 @@
           >
             <div class="hamburger"></div>
           </div>
-          <div id="menu" [ngClass]="{ mobile: hamburger_open }">
+          <div id="menu" [ngClass]="{ mobile: hamburger_open }" (click)="onClickHamburger()">
             <a routerLink="/" routerLinkActive="active">Home</a>
             <a routerLink="/skills" routerLinkActive="active">Skills</a>
             <a href="#">Gallery</a>
