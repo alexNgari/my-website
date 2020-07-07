@@ -1,0 +1,42 @@
+.container {
+  width: 70%;
+  padding-top: 4em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  place-items: center;
+}
+
+.container:after {
+  display: block;
+  content : "";
+  clear: both;
+}
+
+.skill {
+  width: 20rem;
+  float: left;
+  margin: 1%;
+  padding: 1%;
+  border-color: black;
+  border-style: solid;
+  border-radius: 2em;
+  text-align: center;
+  transition: transform .2s;
+}
+
+.skill:hover {
+  transform: scale(1.05);
+  color: chocolate;
+  border-color: chocolate;
+}
+
+.skill img {
+  width: 12em;
+  height: 12em;
+  padding: 1em;
+}
+
+.skill:hover img {
+  filter: invert(43%) sepia(91%) saturate(2357%) hue-rotate(12deg) brightness(90%) contrast(101%);
+}
