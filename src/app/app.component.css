@@ -206,5 +206,9 @@ body.dark_mode header a:hover {
   color: teal;
 }
 
+body.dark_mode .hamburger, body.dark_mode .hamburger::before, body.dark_mode .hamburger::after {
+  background-color: white;
+  border-color: white;
+}
 
 /* filter: brightness(0) saturate(100%) invert(34%) sepia(73%) saturate(800%) hue-rotate(138deg) brightness(94%) contrast(101%); */
