@@ -1,36 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Alex Ngari</title>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alex Ngari</title>
+  </head>
 
-<body style="margin: 0em;">
-  
-  <header>
-    <div class="container">
-      <div id="branding">
-        <a routerLink="/" routerLinkActive="active"><h1>Alex Ngari</h1></a>
+  <body style="margin: 0em;">
+    <header>
+      <div class="container">
+        <div id="branding">
+          <a routerLink="/" routerLinkActive="active"><h1>Alex Ngari</h1></a>
+        </div>
+
+        <nav>
+          <div id="dark-switch">
+            <img src="/assets/images/bulb.png" alt="" />
+          </div>
+          <div
+            class="hamburger-menu"
+            (click)="onClickHamburger()"
+            [ngClass]="{ open: hamburger_open }"
+          >
+            <div class="hamburger"></div>
+          </div>
+          <div id="menu" [ngClass]="{ mobile: hamburger_open }">
+            <a routerLink="/" routerLinkActive="active">Home</a>
+            <a routerLink="/skills" routerLinkActive="active">Skills</a>
+            <a href="#">Gallery</a>
+            <a href="#">Blog</a>
+          </div>
+        </nav>
       </div>
+    </header>
 
-      <nav>
-        <ul>
-          <li><a routerLink="/" routerLinkActive="active">Home</a></li>
-          <li><a routerLink="/skills" routerLinkActive="active">Skills</a></li>
-          <li><a href=#>Gallery</a></li>
-          <li><a href=#>Blog</a></li>
-        </ul>
-        
-      </nav>
-    </div>
-  </header>
+    <router-outlet></router-outlet>
 
-  <router-outlet></router-outlet>
-
-  <footer>
-    <p>&copy; Alex Ngari | alex.ngari03@gmail.com</p>
-  </footer>
-
-</body>
+    <footer>
+      <p>&copy; Alex Ngari | alex.ngari03@gmail.com</p>
+    </footer>
+  </body>
 </html>
