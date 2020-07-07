@@ -6,6 +6,11 @@
   justify-content: center;
 }
 
+div.container {
+  min-height: 80vh;
+  padding-bottom: 3rem;
+}
+
 #prof_pic {
   flex: 0 0 25em;
   margin-bottom: 5rem;
