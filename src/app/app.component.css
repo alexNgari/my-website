@@ -48,7 +48,7 @@ header a .active {
   color: chocolate;
 }
 
-#dark-switch {
+#light-bulb {
   float: left;
   display: flex;
   width: fit-content;
@@ -57,11 +57,11 @@ header a .active {
   margin: 0.2rem; 
 }
 
-#dark-switch img {
+#light-bulb img {
   width: 2rem;
 }
 
-#dark-switch:hover {
+#light-bulb:hover {
   filter: invert(43%) sepia(91%) saturate(2357%) hue-rotate(12deg) brightness(90%) contrast(101%);
 }
 

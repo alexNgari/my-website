@@ -6,10 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  
   hamburger_open: boolean = false;
+  lights_on: boolean = true;
 
   onClickHamburger() {
     this.hamburger_open = !this.hamburger_open;
-    console.log(this.hamburger_open)
+  }
+
+  onClickLightBulb() {
+    this.lights_on = !this.lights_on;
   }
 }
