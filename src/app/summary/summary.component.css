@@ -13,8 +13,10 @@ div.container {
 
 #prof_pic {
   flex: 0 0 25em;
-  margin-bottom: 5rem;
   margin: 1rem;
+  margin-bottom: 3rem;
+  position: -webkit-sticky;
+  position: sticky;
 }
 
 #prof_pic img {
@@ -24,7 +26,13 @@ div.container {
 }
 
 #summary {
-  font-size: 1.5em;
+  font-size: 1.5rem;
   flex: 1;
+  z-index: 49;
 }
 
+@media screen and (max-width: 720px) {
+  #summary {
+    font-size: 1rem;
+  }
+}
