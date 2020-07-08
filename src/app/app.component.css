@@ -1,8 +1,9 @@
 /* header */
 header {
+  box-sizing: border-box;
   padding-top: 1rem;
   margin: 0;
-  min-height: 3rem;
+  height: 4rem;
   position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 0;
@@ -166,6 +167,7 @@ header a .active {
 
 /* footer */
 footer {
+  box-sizing: border-box;
   margin: 0;
   height: 3rem;
   width: 100%;
