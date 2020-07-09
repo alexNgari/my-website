@@ -6,11 +6,11 @@
     <title>Alex Ngari</title>
   </head>
 
-  <body style="margin: 0em;" [ngClass]="{dark_mode: !lights_on}">
+  <body style="margin: 0em;" [ngClass]="{ dark_mode: !lights_on }">
     <header>
       <div class="container">
         <div id="branding">
-          <a routerLink="/" routerLinkActive="active"><h1>Alex Ngari</h1></a>
+          <a routerLink="/"><h1>Alex Ngari</h1></a>
         </div>
 
         <nav>
@@ -24,9 +24,23 @@
           >
             <div class="hamburger"></div>
           </div>
-          <div id="menu" [ngClass]="{ mobile: hamburger_open }" (click)="onClickHamburger()">
-            <a routerLink="/" routerLinkActive="active">Home</a>
-            <a routerLink="/skills" routerLinkActive="active">Skills</a>
+          <div
+            id="menu"
+            [ngClass]="{ mobile: hamburger_open }"
+            (click)="onClickHamburger()"
+          >
+            <a
+              routerLink="/"
+              routerLinkActive="active"
+              [routerLinkActiveOptions]="{ exact: true }"
+              >Home</a
+            >
+            <a
+              routerLink="/skills"
+              routerLinkActive="active"
+              [routerLinkActiveOptions]="{ exact: true }"
+              >Skills</a
+            >
             <a href="#">Gallery</a>
             <a href="#">Blog</a>
           </div>
