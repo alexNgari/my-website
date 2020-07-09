@@ -7,7 +7,7 @@
   justify-content: center;
   place-items: center;
   min-height: calc(100vh - 7rem);
-  background: crimson;
+  padding-bottom: 5rem;
 }
 
 .container:after {
@@ -17,7 +17,8 @@
 }
 
 .skill {
-  width: 20rem;
+  max-width: 20rem;
+  height: width;
   float: left;
   margin: 1%;
   padding: 1%;
@@ -26,6 +27,7 @@
   border-radius: 2em;
   text-align: center;
   transition: transform .2s;
+  flex-grow: 1;
 }
 
 .skill:hover {
@@ -35,11 +37,30 @@
 }
 
 .skill img {
-  width: 12em;
-  height: 12em;
-  padding: 1em;
+  width: 7rem;
+  height: 7rem;
+  padding: 2rem;
 }
 
 .skill:hover img {
   filter: invert(43%) sepia(91%) saturate(2357%) hue-rotate(12deg) brightness(90%) contrast(101%);
+}
+
+/* Dark Mode */
+.skill.dark_mode img{
+  filter: invert(1);
+}
+
+.skill.dark_mode {
+  border-color: white;
+  color: white;
+}
+
+.skill.dark_mode:hover {
+  color: teal;
+  border-color: teal;
+}
+
+.skill.dark_mode:hover img {
+  filter: brightness(0) saturate(100%) invert(34%) sepia(73%) saturate(800%) hue-rotate(138deg) brightness(94%) contrast(101%);
 }

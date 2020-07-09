@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SummaryComponent } from './summary/summary.component';
 import { SkillsComponent } from './skills/skills.component';
+import { DarkModeService } from './dark-mode.service';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,7 @@ import { SkillsComponent } from './skills/skills.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [DarkModeService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
