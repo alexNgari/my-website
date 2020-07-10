@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import { DarkModeService } from '../dark-mode.service';
+import { DarkModeService } from '../../dark-mode.service';
 import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-skills',
   templateUrl: './skills.component.html',
-  styleUrls: ['./skills.component.css']
+  styleUrls: ['./skills.component.css'],
 })
 export class SkillsComponent implements OnInit {
   lights_on: boolean;

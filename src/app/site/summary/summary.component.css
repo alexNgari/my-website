@@ -1,14 +1,18 @@
+body {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
 .container {
+  box-sizing: border-box;
   width: 70%;
-  padding-top: 5em;
+  padding-top: 4em;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-}
-
-div.container {
-  min-height: 80vh;
-  padding-bottom: 3rem;
+  min-height: calc(100vh - 7rem);
+  padding-bottom: 5rem;
 }
 
 #prof_pic {
@@ -35,4 +39,9 @@ div.container {
   #summary {
     font-size: 1rem;
   }
+}
+
+body.dark_mode {
+  background: black;
+  color: white;
 }

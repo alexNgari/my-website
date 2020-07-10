@@ -1,3 +1,9 @@
+body {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
 .container {
   box-sizing: border-box;
   width: 70%;
@@ -63,4 +69,8 @@
 
 .skill.dark_mode:hover img {
   filter: brightness(0) saturate(100%) invert(34%) sepia(73%) saturate(800%) hue-rotate(138deg) brightness(94%) contrast(101%);
+}
+
+body.dark_mode {
+  background: black;
 }

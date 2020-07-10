@@ -3,17 +3,15 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { SummaryComponent } from './summary/summary.component';
-import { SkillsComponent } from './skills/skills.component';
 import { DarkModeService } from './dark-mode.service';
+import { SiteModule } from './site/site.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SummaryComponent,
-    SkillsComponent
   ],
   imports: [
+    SiteModule,
     BrowserModule,
     AppRoutingModule
   ],
