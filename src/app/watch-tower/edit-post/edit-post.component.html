@@ -1,1 +1,26 @@
-<p>edit-post works!</p>
+<body>
+  <watchtower-header></watchtower-header>
+
+  <div class="container">
+    <form [formGroup]="postForm" (ngSubmit)="onSubmit()">
+      
+      <div id="title" class="form-group">
+        <label for="title">Title</label>
+        <quill-editor formControlName="title"></quill-editor>
+      </div>
+
+      <!-- <div id="subtitle" class="form-group">
+        <label for="subtitle"></label>
+        <quill-editor></quill-editor>
+      </div>
+
+      <div id="text" class="form-group">
+        <label for="text"></label>
+        <quill-editor></quill-editor>
+      </div> -->
+      <!-- <button action="button">Submit</button> -->
+    </form>
+  </div>
+
+  <watchtower-footer></watchtower-footer>
+</body>

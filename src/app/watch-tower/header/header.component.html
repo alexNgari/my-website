@@ -1,1 +1,49 @@
-<p>header works!</p>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WatchTower</title>
+  </head>
+
+  <body style="margin: 0em;" [ngClass]="{ dark_mode: !lights_on }">
+    <header>
+      <div class="container">
+        <div id="branding">
+          <a routerLink="/"><h1>WatchTower</h1></a>
+        </div>
+
+        <nav>
+          <div id="light-bulb" (click)="onClickLightBulb()">
+            <img src="/assets/images/bulb.png" alt="" />
+          </div>
+          <div
+            class="hamburger-menu"
+            (click)="onClickHamburger()"
+            [ngClass]="{ open: hamburger_open }"
+          >
+            <div class="hamburger"></div>
+          </div>
+          <div
+            id="menu"
+            [ngClass]="{ mobile: hamburger_open }"
+            (click)="onClickHamburger()"
+          >
+            <a
+              routerLink="watchtower"
+              routerLinkActive="active"
+              >Dashboard</a
+            >
+            <a
+              routerLink="/analytics"
+              routerLinkActive="active"
+              >Analytics</a
+            >
+            <a href="#">Gallery</a>
+            <a href="#">Blog</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+  </body>
+</html>

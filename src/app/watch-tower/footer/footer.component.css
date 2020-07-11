@@ -1,0 +1,25 @@
+/* footer */
+footer {
+  box-sizing: border-box;
+  margin: 0;
+  height: 3rem;
+  width: 100%;
+  position: fixed;
+  bottom: 0em;
+  background: rgba(244, 244, 244, 0.95);
+  z-index: 49;
+}
+
+footer p {
+  text-align: center;
+}
+
+/* Dark Mode */
+body.dark_mode {
+  background-color: black;
+  color: white;
+}
+
+body.dark_mode footer {
+  background: rgba(0, 0, 0, 0.95);
+}
